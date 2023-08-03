@@ -23,14 +23,14 @@
 </head>
 
 <body class="bg-primary">
-    <nav class="flex justify-around items-center text-white mt-5">
+    <nav class="md:flex max-md:text-center justify-around items-center text-white mt-5">
 
         <!-- Hover to spin the logo -->
         <a href="">
             <img class="hover:animate-spin" src="./design/Logo.png" alt="">
         </a>
         <div>
-            <ul class="flex gap-10 max-md:hidden">
+            <ul class="max-md:hidden md:flex md:gap-10 max-md:bg-black max-md:text-right max-md:pr-10 max-md:bg-opacity-30">
                 <li class="cursor-pointer hover:scale-110 hover:duration-500">Features</li>
                 <li class="cursor-pointer hover:scale-110 hover:duration-500">Pricing</li>
                 <li class="cursor-pointer hover:scale-110 hover:duration-500">Help</li>
@@ -38,10 +38,12 @@
                 <li class="cursor-pointer hover:scale-110 hover:duration-500">About Us</li>
             </ul>
         </div>
-
-        <div class="font-bold max-md:hidden">
+        <div class="max-md:hidden font-bold max-md:bg-black max-md:text-right max-md:pr-6 max-md:bg-opacity-30">
             <button class="hover:bg-[#e9dcff] hover:text-[#1e1e1e] hover:duration-500 border-zinc-50 text-white rounded-xl w-24 h-10 mr-2">Log in</button>
             <button class="hover:bg-[#e9dcff] hover:text-[#1e1e1e] hover:duration-500 border-zinc-50 text-white rounded-xl w-24 h-10">Sign Up</button>
+        </div>
+        <div class="md:hidden max-md:absolute max-md:left-80 max-md:top-10">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
         </div>
     </nav>
     <main class="mb-24">
